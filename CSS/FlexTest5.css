@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 1000px;
+    height: 700px;
+    border: 30x solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#container > div:first-child {
+    background-color: violet;
+    flex-basis: 20%;
+}
+#container >div:last-child {
+    border:3px solid red;
+    flex-basis: 80%;
+}
+
+.content {
+    display: flex;
+}
+
+.content > div:nth-child(1) {
+    felx-basis: 50%;
+    background-color:  green;
+}
+
+.content > div:nth-child(2) {
+    felx-basis: 25%;
+    background-color: pink;
+}
+
+.content > div:nth-child(3) {
+    felx-basis: 25%;
+    background-color: hotpink;
+}
