@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .confirm {
+            background-color : green;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .error {
+            color: white;
+            background-color: red;
+            font-family: '궁서';
+            font-weight: bold;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <!-- onsubmit : 양식 제출 이벤트가 발생할 때의 동작을 지정
+    onsubmit이 처리가 되고 나면 action이 역할을 수행하게 됨 -->
+    <form action="main.html" method="GET" onsumbmit="return validate();"
+    <fieldset>
+        <legend>회원가입양식</legend>
+
+        <tr>
+            <td>
+                아이디 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="inputID" class="confirm">
+                <button type="submit">중복확인</button>
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="pw1" >
+                <span id="resultpw1"></span>
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                비밀번호확인&nbsp;
+                <input type="password" id="pw2">
+                
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                이름 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name">
+                <span id="resultn"></span>
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                성별
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                남<input type="radio" id="man" name="check">
+                <label for="man"></label>
+                
+                여<input type="radio" id="woman" name="check">
+                <label for="woman"></label>
+                
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                전화번호
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" id="phone">
+                <span id="resultp"></span>
+            </td>
+        </tr><br><br>
+
+        <tr>
+            <td>
+                이메일
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text">
+            </td>
+        </tr><br><br>
+        <button>초기화</button>
+        <button>회원가입</button>
+    </fieldset>
+
+
+
+
+
+    <script src="/js/회원가입양식.js"></script>
+</body>
+</html>
